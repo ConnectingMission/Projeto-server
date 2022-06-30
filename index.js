@@ -53,6 +53,6 @@ app.use("/api/posts", postRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messsageRoute);
 
-app.listen(8800, () => {
+app.listen(proccess.env.PORT || 8800, () => {
   console.log("Backend server is running!");
 });
